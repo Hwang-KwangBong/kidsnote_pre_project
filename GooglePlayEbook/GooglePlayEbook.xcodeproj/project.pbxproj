@@ -10,7 +10,6 @@
 		A5483A2C2B105DB200D9BA8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5483A2B2B105DB200D9BA8C /* AppDelegate.swift */; };
 		A5483A2E2B105DB200D9BA8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5483A2D2B105DB200D9BA8C /* SceneDelegate.swift */; };
 		A5483A302B105DB200D9BA8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5483A2F2B105DB200D9BA8C /* ViewController.swift */; };
-		A5483A332B105DB200D9BA8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5483A312B105DB200D9BA8C /* Main.storyboard */; };
 		A5483A352B105DB600D9BA8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5483A342B105DB600D9BA8C /* Assets.xcassets */; };
 		A5483A382B105DB600D9BA8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5483A362B105DB600D9BA8C /* LaunchScreen.storyboard */; };
 		A5483A432B105DB600D9BA8C /* GooglePlayEbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5483A422B105DB600D9BA8C /* GooglePlayEbookTests.swift */; };
@@ -40,7 +39,6 @@
 		A5483A2B2B105DB200D9BA8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5483A2D2B105DB200D9BA8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A5483A2F2B105DB200D9BA8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A5483A322B105DB200D9BA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5483A342B105DB600D9BA8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5483A372B105DB600D9BA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5483A392B105DB600D9BA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +97,9 @@
 		A5483A2A2B105DB200D9BA8C /* GooglePlayEbook */ = {
 			isa = PBXGroup;
 			children = (
+				A5483A5B2B10692700D9BA8C /* Classes */,
 				A5483A2B2B105DB200D9BA8C /* AppDelegate.swift */,
 				A5483A2D2B105DB200D9BA8C /* SceneDelegate.swift */,
-				A5483A2F2B105DB200D9BA8C /* ViewController.swift */,
-				A5483A312B105DB200D9BA8C /* Main.storyboard */,
 				A5483A342B105DB600D9BA8C /* Assets.xcassets */,
 				A5483A362B105DB600D9BA8C /* LaunchScreen.storyboard */,
 				A5483A392B105DB600D9BA8C /* Info.plist */,
@@ -125,6 +122,30 @@
 				A5483A4E2B105DB600D9BA8C /* GooglePlayEbookUITestsLaunchTests.swift */,
 			);
 			path = GooglePlayEbookUITests;
+			sourceTree = "<group>";
+		};
+		A5483A5B2B10692700D9BA8C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5483A5D2B10693800D9BA8C /* View */,
+				A5483A5C2B10693300D9BA8C /* Controller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A5483A5C2B10693300D9BA8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5483A2F2B105DB200D9BA8C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5483A5D2B10693800D9BA8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +254,6 @@
 			files = (
 				A5483A382B105DB600D9BA8C /* LaunchScreen.storyboard in Resources */,
 				A5483A352B105DB600D9BA8C /* Assets.xcassets in Resources */,
-				A5483A332B105DB200D9BA8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A5483A312B105DB200D9BA8C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5483A322B105DB200D9BA8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A5483A362B105DB600D9BA8C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,10 +458,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GooglePlayEbook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,10 +484,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GooglePlayEbook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
